@@ -1,0 +1,26 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hieuvp.fingerprint"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+11-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:3:5-74
+11-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:3:22-71
+12    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+12-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:4:5-71
+12-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:4:22-69
+13    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
+13-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:5:5-91
+13-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:5:22-88
+14    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+14-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:6:5-7:104
+14-->D:\works\new_work\AwesomeProject\node_modules\react-native-fingerprint-scanner\android\src\main\AndroidManifest.xml:7:9-101
+15
+16</manifest>

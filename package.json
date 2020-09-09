@@ -1,0 +1,39 @@
+{
+  "name": "react-native-biometrics-fingerid",
+  "version": "6.0.2",
+  "description": "React Native Biometrics Scanner for Android and iOS",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react-component",
+    "react",
+    "native",
+    "touch",
+    "touchid",
+    "touch-id",
+    "fingerprint",
+    "fingerprint-scanner",
+    "authentication",
+    "authenticate",
+    "auth",
+    "face-id",
+    "faceid",
+    "biometrics"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.60 <1.0.0"
+  },
+  "homepage": "https://github.com/juncocoa/react-native-biometrics-fingerid#readme",
+  "repository": "https://github.com/juncocoa/react-native-biometrics-fingerid.git",
+  "author": "Jun Cocoa (https://github.com/juncocoa)",
+  "license": "MIT",
+  "types": "index.d.ts",
+  "scripts": {
+    "android": "cd examples && react-native run-android",
+    "ios": "cd examples && react-native run-ios",
+    "cleanup": "rm -rf android/build ios/build yarn.lock node_modules && cd examples && rm -rf android/build android/app/build ios/build yarn.lock node_modules",
+    "cleanup:android": "cd examples/android && ./gradlew clean",
+    "cleanup:install": "yarn cleanup && yarn && cd examples && yarn && cd .. && yarn symlink && yarn cleanup:android"
+  }
+}

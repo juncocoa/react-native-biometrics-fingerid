@@ -1,0 +1,57 @@
+def safeExtGet(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
+buildscript {
+    // The Android Gradle plugin is only required when opening the android folder stand-alone.
+    // This avoids unnecessary downloads and potential conflicts when the library is included as a
+    // module dependency in an application project.
+    if (project == rootProject) {
+        repositories {
+            google()
+            maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+            //jcenter()
+        }
+
+        dependencies {
+            classpath("com.android.tools.build:gradle:3.5.1")
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion safeExtGet('compileSdkVersion', 29)
+    buildToolsVersion safeExtGet('buildToolsVersion', '29.0.2')
+
+    defaultConfig {
+        minSdkVersion safeExtGet('minSdkVersion', 16)
+        targetSdkVersion safeExtGet('targetSdkVersion', 29)
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    google() //加上这行
+    maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+    //jcenter()
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    // androidx:biometric now supports fingerprint back to Android v23
+    implementation "androidx.biometric:biometric:1.1.0-alpha01"
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // retain fingerprintScanner lib for compat with Android v16-23 device-specific drivers (Samsung & MeiZu)
+    // 1.2.3 is the minimum version compatible with androidx.
+    // See https://github.com/uccmawei/FingerprintIdentify/issues/74
+    // (translation https://translate.google.com/translate?sl=zh-CN&tl=en&u=https://github.com/uccmawei/FingerprintIdentify/issues/74)
+    implementation "com.wei.android.lib:fingerprintidentify:${safeExtGet("fingerprintidentify", "1.2.6")}"
+}
