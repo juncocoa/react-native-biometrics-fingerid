@@ -1,8 +1,8 @@
 # React Native Fingerprint Scanner
 
 [![React Native Version](https://img.shields.io/badge/react--native-latest-blue.svg?style=flat-square)](http://facebook.github.io/react-native/releases)
-[![Version](https://img.shields.io/npm/v/react-native-fingerprint-scanner.svg)](https://www.npmjs.com/package/react-native-fingerprint-scanner)
-[![NPM](https://img.shields.io/npm/dm/react-native-fingerprint-scanner.svg)](https://www.npmjs.com/package/react-native-fingerprint-scanner)
+[![Version](https://img.shields.io/npm/v/react-native-biometrics-fingerid.svg)](https://www.npmjs.com/package/react-native-biometrics-fingerid)
+[![NPM](https://img.shields.io/npm/dm/react-native-biometrics-fingerid.svg)](https://www.npmjs.com/package/react-native-biometrics-fingerid)
 
 React Native 指纹扫描仪是一个 [React Native](http://facebook.github.io/react-native/) 库，用于使用指纹（TouchID）对用户进行身份验证。
 
@@ -22,13 +22,13 @@ Touch ID 的使用基于名为 **本地身份验证** 的框架。
 
 Samsung 和 MeiZu 的 Fingerprint SDK 支持大多数系统版本低于 Android 6.0 的设备。
 <div>
-  <img src="https://github.com/hieuvp/react-native-fingerprint-scanner/raw/master/screenshots/android-availability.png" height="600">
+  <img src="https://github.com/hieuvp/react-native-biometrics-fingerid/raw/master/screenshots/android-availability.png" height="600">
 </div>
 
 ## 安装
 
 ```sh
-$ npm install react-native-fingerprint-scanner --save
+$ npm install react-native-biometrics-fingerid --save
 ```
 
 ### 自动配置
@@ -39,7 +39,7 @@ $ cd ios && pod install
 
 RN <= 0.60, 使用 react-native link 添加到您的项目中：
 ```sh
-$ react-native link react-native-fingerprint-scanner
+$ react-native link react-native-biometrics-fingerid
 ```
 
 ### 手动配置
@@ -47,7 +47,7 @@ $ react-native link react-native-fingerprint-scanner
 #### iOS
 
 1. 在 XCode 中的项目导航器中，右键单击 `Libraries` ➜ `Add Files to [your project's name]`
-2. 找到 `node_modules` ➜ `react-native-fingerprint-scanner` 并且添加 `ReactNativeFingerprintScanner.xcodeproj`
+2. 找到 `node_modules` ➜ `react-native-biometrics-fingerid` 并且添加 `ReactNativeFingerprintScanner.xcodeproj`
 3. 在 XCode 中的项目导航器中，选择您的项目，添加 `libReactNativeFingerprintScanner.a` 到你的工程文件 `Build Phases` ➜ `Link Binary With Libraries`
 4. 运行你的项目 (`Cmd+R`)
 
@@ -58,12 +58,12 @@ $ react-native link react-native-fingerprint-scanner
   - 添加 `new ReactNativeFingerprintScannerPackage()` to the list returned by the `getPackages()` 方法
 2. 将以下行附加到 `android/settings.gradle`:
   	```
-  	include ':react-native-fingerprint-scanner'
-  	project(':react-native-fingerprint-scanner').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fingerprint-scanner/android')
+  	include ':react-native-biometrics-fingerid'
+  	project(':react-native-biometrics-fingerid').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-biometrics-fingerid/android')
   	```
 3. 将以下行插入到 dependencies 块中 `android/app/build.gradle`:
   	```
-    implementation project(':react-native-fingerprint-scanner')
+    implementation project(':react-native-biometrics-fingerid')
   	```
 
 ### App 权限
@@ -129,7 +129,7 @@ API level <23 (如果需要，Samsung & MeiZu 使用设备特定的本机指纹)
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { AlertIOS } from 'react-native';
-import FingerprintScanner from 'react-native-fingerprint-scanner';
+import FingerprintScanner from 'react-native-biometrics-fingerid';
 
 class FingerprintPopup extends Component {
 
@@ -173,7 +173,7 @@ import {
   Platform,
 } from 'react-native';
 
-import FingerprintScanner from 'react-native-fingerprint-scanner';
+import FingerprintScanner from 'react-native-biometrics-fingerid';
 import styles from './FingerprintPopup.component.styles';
 import ShakingText from './ShakingText.component';
 

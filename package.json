@@ -1,6 +1,6 @@
 {
   "name": "react-native-biometrics-fingerid",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "description": "React Native Biometrics Scanner for Android and iOS",
   "main": "index.js",
   "keywords": [
