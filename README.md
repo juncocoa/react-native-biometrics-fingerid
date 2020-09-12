@@ -1,11 +1,12 @@
-# React Native Fingerprint Scanner
+# React Native Biometrics FingerId
 
 [![React Native Version](https://img.shields.io/badge/react--native-latest-blue.svg?style=flat-square)](http://facebook.github.io/react-native/releases)
 [![Version](https://img.shields.io/npm/v/react-native-biometrics-fingerid.svg)](https://www.npmjs.com/package/react-native-biometrics-fingerid)
 [![NPM](https://img.shields.io/npm/dm/react-native-biometrics-fingerid.svg)](https://www.npmjs.com/package/react-native-biometrics-fingerid)
 
 React Native 指纹扫描仪是一个 [React Native](http://facebook.github.io/react-native/) 库，用于使用指纹（TouchID）对用户进行身份验证。
-
+![waPiu9](https://s1.ax1x.com/2020/09/12/waPiu9.jpg)
+![waPFBR](https://s1.ax1x.com/2020/09/12/waPFBR.jpg)
 
 ### iOS 版本
 Touch ID 的使用基于名为 **本地身份验证** 的框架。
