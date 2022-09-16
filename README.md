@@ -459,3 +459,4 @@ FingerprintScanner.getFingerEncodeByMD5().then((result)=>{
 
 ### 捐赠（Donate）
 <img src="https://camo.githubusercontent.com/61ea2757c07e7f367707f297b06022bf0e6724e8efb86b6aab0b9cc0946951a9/68747470733a2f2f73312e617831782e636f6d2f323032322f30392f31362f767a775944672e6a7067" title="支付宝扫一扫" data-canonical-src="https://s1.ax1x.com/2022/09/16/vzwYDg.jpg" style="max-width: 360px; width: 360px;">
+感谢您的捐赠
