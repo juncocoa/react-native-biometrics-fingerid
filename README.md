@@ -457,6 +457,5 @@ FingerprintScanner.getFingerEncodeByMD5().then((result)=>{
 | FingerprintScannerNotEnrolled  | 由于指纹扫描仪没有注册手指，因此无法启动身份验证。 |
 | FingerprintScannerNotAvailable | 由于指纹扫描仪在设备上不可用，因此无法启动身份验证。 |
 
-### 协议（License）
-
-MIT
+### 捐赠（Donate）
+<img src="https://camo.githubusercontent.com/61ea2757c07e7f367707f297b06022bf0e6724e8efb86b6aab0b9cc0946951a9/68747470733a2f2f73312e617831782e636f6d2f323032322f30392f31362f767a775944672e6a7067" title="支付宝扫一扫" data-canonical-src="https://s1.ax1x.com/2022/09/16/vzwYDg.jpg" style="max-width: 360px; width: 360px;">
